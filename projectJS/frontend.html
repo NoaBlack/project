@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+<h3 id="greet" style="position: absolute; right: 5px;"></h3>
+<div id="clock"></div>
+        <div id="myBtn"></div>
+<div id="myModal" class="modal">
+  <div class="modal-content alert alert-info"  role="alert">
+    <span class="close"></span>
+    <h3 id="head"></h3>
+    <p id="Instructions"></p>
+    <h6 id="important"></h6>
+    <h4 id="pick"></h4>
+   
+    <button type="button" class="rank btn btn-info m-1" onclick="start(colors,600000,600000)">קל</button> 
+    <button type="button" class="rank btn btn-info m-1" onclick="start(colors,180000,180000)">בינוני</button>
+    <button type="button" class="rank btn btn-info m-1" onclick="start(colors,90000,90000)">קשה</button>
+    </nav>
+    <div class="container-fluid p-0 m-0">
+     <div class="row hi70 m-0">
+        <div class="col-2 mbr">
+     <div class="score"></div>
+        </div>
+        <div class="col-8 mbr">
+            <div class="guesses m-3">
+                <div id="colorN1"></div>
+                <div id="colorN2"></div>
+                <div id="colorN3"></div>
+                <div id="colorN4"></div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-info" id="btn" onclick="guess(guesscolor,game)"></button>
+            <div class="guessing"></div>
+        </div>
+        <div class="col-2 mbr p-1">
+            <div id="color1" onclick="Scolor(this)"></div> <br>
+            <div id="color2" onclick="Scolor(this)"></div> <br>
+            <div id="color3" onclick="Scolor(this)"></div> <br>
+            <div id="color4" onclick="Scolor(this)"></div> <br>
+            <div id="color5" onclick="Scolor(this)"></div> <br>
+            <div id="color6" onclick="Scolor(this)"></div> <br>
+            <div id="color7" onclick="Scolor(this)"></div> <br>
+            <div id="color8" onclick="Scolor(this)"></div> <br>
+        </div>
+    </div>
+    </div>
+    <div></div>
+    <script src="data.js"></script>
+</body>
+</html>

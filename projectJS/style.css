@@ -1,0 +1,85 @@
+#color1,#color2,#color3,#color4,#color5,#color6,#color7,#color8,#colorN1,#colorN2,#colorN3,#colorN4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: inline-block;
+    border: black 1px;
+    border-style:double ;
+}
+@media(max-width:900px){
+    #color1,#color2,#color3,#color4,#color5,#color6,#color7,#color8,#colorN1,#colorN2,#colorN3,#colorN4{
+        height: 40px;
+        width: 40px;  
+    }  
+    .score1,.score2{
+        width: 5px;
+        height: 5px;
+    }
+}
+@media(min-width:1000px){
+    .modal-content{
+        height: 50%;
+    }
+}
+#guessing,#guesses{
+    height: 60px;
+    width: 250px;
+    border-radius: 20px;
+    border: black 1px;
+    border-style:double ;
+    display: inline-block;
+
+}
+.hi70{
+    height: 90vh;
+}
+body{
+    background-color: whitesmoke;
+}
+.mbr{
+    border: 1px solid black;  
+
+}
+.navbar{
+    height: 10vh;
+    text-align: center;
+    background-color:  rgb(60, 94, 95);
+}
+.score{
+padding-top: 150px;
+}
+.container-fluid,.navbar,.modal{
+    text-align: center !important;
+}
+.guessing{
+    padding: 2px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color:white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    
+  }
+  #clock{
+      font-size: 4vh;
+      border: 5px solid powderblue;
+      border-radius: 40px;
+      position: absolute;
+      left: 5px;
+  }
